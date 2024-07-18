@@ -23,8 +23,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800;900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
@@ -122,8 +122,8 @@
     <div class="container">
       <div class="row">
         <div class="section-header align-center">
-          <h2 class="section-title light">What Do we Stand For  </h2>
-          <p>We're the $Solas Community a Community movement with the best Technologies to drive the $Solas AllStars meme coin.</p>
+          <h2 class="section-title secondary" style="color: #d8bfd8; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);">What Do We Stand For</h2>
+          <p class="light">We're the $Solas Community a Community movement with the best Technologies to drive the $Solas AllStars meme coin. <br> Narrative by Spreading Crypto and web 3 Education with physical live Events for people to participate in and profit.</p>
 
         </div>
         <div class="product-content overflow-hidden">
@@ -209,7 +209,7 @@
                     <h3 class="card-title">Biggest Crypto Event</h3>
                   </div>
                   <div class="btn-card">
-                    <a href="https://t.me/SolanaAllstarsCoin" class="btn btn-linear btn-full btn-rounded btn-medium">Donate</a>
+                    <a href="#" class="btn btn-linear btn-full btn-rounded btn-medium" data-toggle="modal" data-target="#donateModal">Donate</a>
                   </div>
                 </div>
               </div>
@@ -310,7 +310,7 @@
           <div class="subscribe-content">
             <div class="subscribe-header">
               <h3 class="subscribe-title light">Follow our Twitter And get Latest news update about Solas.</h3>
-              <p>Not affiliated to @SolanaAllstars ,but a meme coin built on http://Pump.Fun to celebrate the passionate Solana Movement</p>
+              <p class="secondary">Not affiliated to @SolanaAllstars ,but a meme coin built on http://Pump.Fun to celebrate the passionate Solana Movement</p>
             </div>
             <div class="btn-wrap d-flex flex-wrap">
               <a href="https://x.com/allstars_token?t=VkXtWFc6NDjsxbZbo6UKzw&s=09" class="btn btn-linear btn-medium mt-3"><i class="fab fa-twitter"></i> Twitter
@@ -321,6 +321,7 @@
       </div>
     </div>
   </section>
+
   <section id="blog" class="padding-large">
     <div class="container">
       <div class="row overflow-hidden">
@@ -400,6 +401,25 @@
       </div>
     </div>
   </section>
+
+  <!-- Modal -->
+    <div class="modal fade" id="donateModal" tabindex="-1" role="dialog" aria-labelledby="donateModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="donateModalLabel">Donate to Our Wallet</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <p>Wallet Address:</p>
+                  <input type="text" class="form-control" id="walletAddress" value="9qF6ZzTa8a3KV1VRtLvehkz2b5C4mz38gzwJcjVrLvis" readonly>
+                  <button class="btn btn-primary mt-3" id="copyButton">Copy Wallet Address</button>
+              </div>
+          </div>
+      </div>
+  </div>
   <footer id="footer" class="padding-large pattern-blur">
     <div class="pattern-overlay pattern-blur-footer right-side-pattern">
       <img src="images/footer-pattern.png">
@@ -409,7 +429,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="footer-item item-001">
             <img src="images/main-logo.png" alt="logo">
-            <p>
+            <p class="text-light">
               Look past the surface, and you'll see the revolution! 👀
               Join the Revolution Now
             </p>
@@ -434,7 +454,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-2 col-md-6">
+        <div class="col-lg-2 col-md-6 mt-5">
           <div class="footer-item item-002 content-light">
             <h4>Learn More</h4>
             <ul class="footer-menu list-unstyled">
@@ -453,7 +473,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-4 col-md-8">
+        <div class="col-lg-4 col-md-8 mt-5">
           <div class="footer-item item-003 content-light">
             <h4>Info</h4>
             <ul class="footer-menu list-unstyled">
@@ -465,25 +485,6 @@
               </li>
               <li>
                 <a href="#">Rankings</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-8">
-          <div class="footer-item item-005 content-light">
-            <h4>Resources</h4>
-            <ul class="footer-menu list-unstyled">
-              <li>
-                <a href="index.html">Info</a>
-              </li>
-              <li>
-                <a href="#">Affiliates</a>
-              </li>
-              <li>
-                <a href="#">Associated</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
               </li>
             </ul>
           </div>
@@ -502,6 +503,20 @@
   <script type="text/javascript" src="js/plugins.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+      $(document).ready(function(){
+          $('#copyButton').click(function(){
+              var copyText = document.getElementById("walletAddress");
+              copyText.select();
+              copyText.setSelectionRange(0, 99999); // For mobile devices
+              document.execCommand("copy");
+              alert("Wallet address copied: " + copyText.value);
+          });
+      });
+  </script>
 </body>
 
 </html>
